@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*利用するタグによってこちらの内容は増やす*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body{
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 60px;
+}
+
+.title {
+    text-align: center;
+    color: green;
+}
+
+.cards {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+.card  {
+    flex: 1 1 0;
+    background-color: #fff;
+
+}
+
+.card img{
+    height: auto;
+}
+
+.card p {
+    margin: 0;
+}
+
+.subtitle{
+    border-left: 8px solid green; 
+    color: green;
+
+}
+
+@media screen and (max-width:400px){
+    .wrap{
+        padding: 0 14px;
+        max-width: none;
+    
+    }
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .card{
+        padding: 10px;
+    }
+
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+}
